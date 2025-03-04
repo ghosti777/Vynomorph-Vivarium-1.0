@@ -1,7 +1,6 @@
-/* 🔥 Import Unique Font */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
-/* 🔥 Reset & Base Styles */
+/* 🔥 Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +8,12 @@
 }
 
 body {
-    font-family: 'IM Fell English SC', serif;
+    font-family: 'Julius Sans One', sans-serif;
     color: white;
     text-align: center;
     min-height: 100vh;
     position: relative;
-    background: black;
-    padding-bottom: 50px;
+    overflow-x: hidden;
 }
 
 /* 🔥 Background Image */
@@ -25,74 +23,74 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('https://example.com/snake-background.jpg') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/YOUR_GITHUB/snake-scales.jpg') no-repeat center center;
     background-size: cover;
     z-index: -10;
 }
 
-/* 🔥 Overlay for Visibility */
+/* 🔥 Overlay for Readability */
 #overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     z-index: -5;
 }
 
-/* 🔥 Title Styling */
+/* 🔥 Title Section */
 #title-section h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
-    color: #00ff99; /* Neon Green for Snake Theme */
-    text-shadow: 2px 2px 5px rgba(0, 255, 128, 0.7);
+    color: #ffcc00; /* Venomous Yellow */
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-#title-section h3 {
-    font-size: 24px;
+/* 🔥 Hunt Score Display */
+#hunt-score {
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #ffcc00;
-    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.8);
+    color: #00ffcc;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 8px;
 }
 
-/* 🔥 Score Display */
-#hunt-score-container {
+/* 🔥 Conviction Analysis Box */
+#hunt-analysis {
     background: rgba(0, 0, 0, 0.75);
     padding: 15px;
     border-radius: 10px;
-    color: #00ff99;
+    color: #ffcc00;
     font-size: 1.2rem;
     font-weight: bold;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 255, 128, 0.5);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
     margin-top: 20px;
+    font-style: italic;
 }
 
-/* 🔥 Indicator Checkboxes */
-.indicator-container {
-    background: rgba(0, 0, 0, 0.45);
-    padding: 15px;
-    border-radius: 12px;
-    margin: 10px auto;
-    width: 90%;
-    max-width: 450px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+/* 🔥 Indicator List */
+.indicator-list {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    margin-top: 15px;
 }
 
-.indicator-container label {
-    display: block;
-    margin: 5px 0;
-    font-size: 1rem;
+.indicator-list label {
+    font-size: 1.1rem;
     color: white;
+    margin-bottom: 5px;
+    display: block;
 }
 
-/* 🔥 Calculate Button */
+/* 🔥 Button Styling */
 #calculate-hunt {
-    background: linear-gradient(135deg, #00ff99, #00cc66);
+    background: linear-gradient(135deg, #007700, #00cc44);
     color: white;
     padding: 12px;
     border: none;
@@ -100,7 +98,7 @@ body {
     cursor: pointer;
     font-size: 1.2rem;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 20px rgba(0, 255, 128, 1), 0 0 40px rgba(0, 255, 128, 0.7);
+    box-shadow: 0 0 20px rgba(0, 204, 0, 1), 0 0 40px rgba(0, 204, 0, 0.7);
     transition: all 0.3s ease-in-out;
     width: 100%;
     max-width: 500px;
@@ -108,7 +106,12 @@ body {
     margin: 20px auto;
 }
 
+/* 🔥 Hover & Active Effects */
 button:hover {
-    background: rgba(0, 255, 128, 1);
-    box-shadow: 0 0 20px rgba(0, 255, 128, 1);
+    background: rgba(0, 204, 0, 1);
+    box-shadow: 0 0 20px rgba(0, 204, 0, 1);
+}
+
+button:active {
+    background: rgba(0, 153, 0, 1);
 }
