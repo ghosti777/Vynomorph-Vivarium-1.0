@@ -1,0 +1,114 @@
+/* 🔥 Import Unique Font */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+/* 🔥 Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IM Fell English SC', serif;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    background: black;
+    padding-bottom: 50px;
+}
+
+/* 🔥 Background Image */
+#background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://example.com/snake-background.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -10;
+}
+
+/* 🔥 Overlay for Visibility */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -5;
+}
+
+/* 🔥 Title Styling */
+#title-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00ff99; /* Neon Green for Snake Theme */
+    text-shadow: 2px 2px 5px rgba(0, 255, 128, 0.7);
+}
+
+#title-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.8);
+}
+
+/* 🔥 Score Display */
+#hunt-score-container {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 15px;
+    border-radius: 10px;
+    color: #00ff99;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 128, 0.5);
+    margin-top: 20px;
+}
+
+/* 🔥 Indicator Checkboxes */
+.indicator-container {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.indicator-container label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1rem;
+    color: white;
+}
+
+/* 🔥 Calculate Button */
+#calculate-hunt {
+    background: linear-gradient(135deg, #00ff99, #00cc66);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 128, 1), 0 0 40px rgba(0, 255, 128, 0.7);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background: rgba(0, 255, 128, 1);
+    box-shadow: 0 0 20px rgba(0, 255, 128, 1);
+}
