@@ -3,53 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Vynomorph Vivarium</title>
+    <title>The Vynomorph Vivarium – Cobra Hunt Mode</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 🔥 Background & Overlay -->
+    <!-- 🔥 Background Layers -->
     <div id="background-container"></div>
     <div id="overlay"></div>
 
     <!-- 🔥 Title Section -->
     <div id="title-section">
-        <h2>The Vynomorph Vivarium</h2>
-        <h3>Cobra Hunt Mode 🐍</h3>
+        <h2>The Vynomorph Vivarium – Cobra Hunt Mode</h2>
     </div>
 
     <!-- 🔥 Main UI Box -->
-    <div id="vivarium-section">
-        
-        <!-- 🔥 Score Display -->
-        <div id="hunt-score-container">
-            <h3>Hunt Score: <span id="hunt-score">--</span></h3>
-            <div id="hunt-analysis-container">
-                <div class="hunt-analysis-box">
-                    <div id="hunt-analysis">--</div>
-                </div>
-            </div>
+    <div id="hunt-section">
+        <!-- Indicators & Score -->
+        <h3>Hunt Score: <span id="hunt-score">--</span></h3>
+        <div id="hunt-analysis">--</div>
+
+        <!-- Indicator Checkboxes -->
+        <div class="indicator-list">
+            <label><input type="checkbox" id="triple-mountain"> Triple Mountain Confirmation</label>
+            <label><input type="checkbox" id="stc"> STC Agreement</label>
+            <label><input type="checkbox" id="redkeverex"> Redkeverex Strength</label>
+            <label><input type="checkbox" id="x-marks"> X Marks the Spot</label>
+            <label><input type="checkbox" id="golden-pocket"> Golden Pocket Magnet</label>
+            <label><input type="checkbox" id="liquidity-sweep"> Bullish/Bearish Liquidity Grab</label>
         </div>
 
-        <!-- 🔥 Indicator Selection (Placeholder for Now) -->
-        <h4>Indicators Used for Cobra Hunt</h4>
-        <div class="indicator-container">
-            <label><input type="checkbox" id="triple-mountain"> Triple Mountain Range ✅</label>
-            <label><input type="checkbox" id="stc"> STC Confirmation ✅</label>
-            <label><input type="checkbox" id="redkeverex"> RedK Analysis ✅</label>
-            <label><input type="checkbox" id="x-marks"> X Marks the Spot 🏴‍☠️</label>
-            <label><input type="checkbox" id="golden-pocket"> Golden Pocket Confluence ⭐</label>
-            <label><input type="checkbox" id="liquidity-sweep"> Liquidity Grab Bonus 💰</label>
-        </div>
-
-        <!-- 🔥 Fixed Calculate Button -->
-        <div id="calculate-container">
-            <button id="calculate-hunt">🔥 Calculate Hunt 🔥</button>
-        </div>
-
+        <!-- Calculate Button -->
+        <button id="calculate-hunt">🐍 Calculate Hunt Score 🐍</button>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
